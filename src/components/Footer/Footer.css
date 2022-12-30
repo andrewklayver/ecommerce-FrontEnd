@@ -1,0 +1,27 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color:  rgb(49,58, 77);
+  padding: 10px;
+  gap: 60px;
+  margin-top: 60px;
+}
+ 
+h3{
+   color:white;
+}
+
+p{
+   font-size: 0.80rem;
+   color:white;
+}
+
+.textoReponsavel{
+   margin-left: 15px;
+}
+
+.descResponsavel{
+   display: flex;
+   flex-direction: row;
+}

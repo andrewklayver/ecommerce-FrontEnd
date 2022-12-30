@@ -1,0 +1,19 @@
+.tab-container{
+    display: flex;
+    justify-content: space-around;
+    flex: 1;   
+}
+
+.image{
+    width: 2em;
+    padding: 6px;
+}
+
+.login-usuario{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    color: #000;
+    text-decoration: underline;  
+  }

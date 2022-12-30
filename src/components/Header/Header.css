@@ -1,0 +1,37 @@
+header{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 15px solid #ff1900;
+}
+
+nav{
+    display:flex;
+    flex-direction: row;
+}
+
+nav ul{
+    display:flex;
+    flex-direction: row;
+    gap:20px;
+}
+
+nav ul li{
+    list-style: none;
+    text-align: center;
+
+}
+.logo{
+    left: 10px;
+    width: 10em;
+}
+
+.visitante{
+    color: #ff1900;
+    padding-left: 30px ;
+}
+
+
+
