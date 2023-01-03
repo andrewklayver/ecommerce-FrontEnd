@@ -2,12 +2,12 @@
 import "./Header.css";
 
 const Header = () => {
-    return ( 
+   
+   return ( 
         <header>
               <img className="logo" src="../../image/americanas.svg" alt="logo"></img> 
            <nav>
               <ul>
-                <li>Produtos</li>
                 <li>Adicionar Produtos</li>
               </ul>
            <div className="visitante">
