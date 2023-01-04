@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { useFormik, Formik, Form, Field, ErrorMessage } from 'formik';
 import "./Login.css"
 import { basicSchema } from '../../schemas';
-import IconPaciente from '../IconPaciente';
+
 import axios from "axios"; 
 
 
@@ -39,7 +39,7 @@ function Login() {
     <div className='cadastro'>
       <h1 className='text-login'>Faça seu login</h1>
       <div className='cinza'>
-        <IconPaciente />
+    
         <form onSubmit={handleSubmit} autoComplete="off" className="form" >
 
           <div className="formField">

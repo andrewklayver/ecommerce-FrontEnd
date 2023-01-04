@@ -6,7 +6,7 @@
 }
 
 body {
-  display: flex;
+  display: inline-block;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
@@ -15,11 +15,12 @@ body {
 
 .card {
   position: relative;
-  width: 320px;
-  height: 480px;
+  width: 290px;
+  height: 415px;
   background: #191919;
   border-radius: 20px;
   overflow: hidden;
+  margin: 10px;
 }
 
 .card::before {
@@ -44,13 +45,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 20px;
+  padding-top: 10px;
   z-index: 1;
 }
 
 .card .contentBox {
   position: relative;
-  padding: 20px;
+  padding: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -77,8 +78,8 @@ body {
   position: relative;
   top: 100px;
   opacity: 0;
-  padding: 10px 30px;
-  margin-top: 15px;
+  padding: 5px 12px;
+  margin-top: 10px;
   color: #000000;
   text-decoration: none;
   background: #ffce00;

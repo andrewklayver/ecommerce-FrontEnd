@@ -11,7 +11,7 @@ const Header = () => {
                 <li>Adicionar Produtos</li>
               </ul>
            <div className="visitante">
-            <a> Faça seu Login!</a>
+            <a href="/login"> Faça seu Login!</a>
            </div>
            </nav> 
        

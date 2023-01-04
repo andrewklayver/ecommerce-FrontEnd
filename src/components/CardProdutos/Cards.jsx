@@ -8,12 +8,12 @@ function Cards() {
 
     useEffect(() => {
         axios.get("http://localhost:3006/produto")
-        .then(res => res.json())    
+
         .then((res) => {
-                setProdutos(res.data)
+              setProdutos(res.data.produtos)
             })
-            .catch(() => {
-                console.log("Deu errado")
+            .catch(erro => {
+                console.log(erro)
             })
     }, [])
 
@@ -29,7 +29,7 @@ function Cards() {
 
                         <div className="contentBox">
                             <h3>{produto.titulo}</h3>
-                            <h2 className="price">{produto.preco}</h2>
+                            <h2 className="price">{produto.valor}</h2>
                             <a href="#" className="buy">Comprar</a>
                         </div>
                     </div>
