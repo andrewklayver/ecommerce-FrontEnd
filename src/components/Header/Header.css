@@ -33,5 +33,8 @@ nav ul li{
     padding-left: 30px ;
 }
 
-
+.visitante a {
+    color:#ff1900;
+    text-decoration: none;
+}
 

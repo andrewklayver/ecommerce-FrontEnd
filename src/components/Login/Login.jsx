@@ -8,12 +8,11 @@ import axios from "axios";
 
 const onSubmit = async (values, actions) => {
   console.log(values);
-  console.log(actions);
   await new Promise((resolve) => setTimeout(resolve, 1000));
   actions.resetForm()
-  await axios.get('https://634b29e533bb42dca41161ad.mockapi.io/login/v1/users')
-  .then(response => {
-    if(values.email === response.data.email && values.password === response.data.senha){
+  await axios.get('http://localhost:3006/usuario')
+  .then(res => {
+    if(values.email === res.email && values.senha === res.senha){
       window.alert("Você está logado")
     }else{
       window.alert(`Usuário não existe`)
@@ -26,8 +25,8 @@ const onSubmit = async (values, actions) => {
 function Login() {
   const { values, errors, touched, isSubmitting, handleBlur, handleChange, handleSubmit } = useFormik({
     initialValues: {
-      email: '',
-      password: '',
+      email: 'andrew1@gmail.com',
+      senha: 'andrew1800',
     },
     validationSchema: basicSchema,
     onSubmit,
@@ -61,16 +60,16 @@ function Login() {
           <div className="formField">
             <label>Senha*</label>
             <input
-              id="password"
-              type="password"
+              id="senha"
+              type="senha"
               placeholder="Digite sua senha..."
               onChange={handleChange}
-              value={values.password}
+              value={values.senha}
               onBlur={handleBlur}
             />
 
             <div>
-              {errors.password && touched.password && <p className="error">{errors.password}</p>}
+              {errors.senha && touched.senha && <p className="error">{errors.senha}</p>}
             </div>
           </div>
 

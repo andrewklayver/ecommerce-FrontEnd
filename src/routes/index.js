@@ -9,7 +9,9 @@ const RoutesApp = () => {
         <BrowserRouter>
           <Routes>
           <Route path="/" element={< Home />} />
-          <Route path="/Login" element={<Signin />} />
+          <Route path="/login" element={<Signin />} />
+          <Route path="/cadastro" element={<Signup />} />
+          <Route path="/criarproduto" element={<Signin />} />
 
           </Routes>
         </BrowserRouter>

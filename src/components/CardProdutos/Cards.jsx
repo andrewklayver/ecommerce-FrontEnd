@@ -24,7 +24,7 @@ function Cards() {
                     <div className="card" key={key}>
 
                         <div className="imgBox">
-                            <img src="#" alt="mouse corsair" className="mouse" />
+                            <img src="#" className="mouse" />
                         </div>
 
                         <div className="contentBox">

@@ -5,7 +5,7 @@ const Header = () => {
    
    return ( 
         <header>
-              <img className="logo" src="../../image/americanas.svg" alt="logo"></img> 
+              <img href="/home" className="logo" src="../../image/americanas.svg" alt="logo"></img> 
            <nav>
               <ul>
                 <li>Adicionar Produtos</li>
