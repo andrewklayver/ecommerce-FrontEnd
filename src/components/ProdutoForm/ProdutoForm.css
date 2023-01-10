@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Open+Sans:wght@400;700&display=swap');
+
+body {
+
+    font-family: 'Open Sans', sans-serif;
+  
+
+ 
+  }
+  
+  .cinza{
+    background-color: #f5f5f5;
+    height: 60vh;
+    width: 40vw; 
+    flex-direction: column;
+    border-radius: 15px;
+    
+  }
+
+.cadastro {
+  display: flex;
+  text-align: center;
+  margin-top: 2%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-login{
+  padding: 0.50em;
+}
+
+.formField{
+  display: flex;
+  flex-direction: column;
+  width: 32vw;
+  background-color: #ffff;
+  padding: 1px;
+  margin: 10%;
+  text-align: start;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+ border-radius: 5px;
+}
+
+.formField input{
+ border: none;
+ padding: 1%
+}
+
+.formField input:focus{
+  outline: 0;
+}
+
+.formField label{
+  color: #000000;
+  margin: 5px;
+}
+.error{
+  color: red;
+  font-size: 10px;
+}
+
+.button {
+    justify-content: center;
+    border: none;
+    padding: 1em;
+    width: 50%;
+    background-color:#ff1900;
+    color: #ffff;
+}
+
+
+.link-login {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding:10px 20px;
+}
+
+.link-login a {
+  color: blue;
+  font-weight: 500;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+

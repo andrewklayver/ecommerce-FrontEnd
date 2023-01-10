@@ -6,21 +6,20 @@
 }
 
 body {
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 .card {
   position: relative;
-  width: 290px;
-  height: 415px;
+  width: 260px;
+  height: 380px;
   background: #191919;
   border-radius: 20px;
   overflow: hidden;
-  margin: 10px;
+  margin: 15px;
 }
 
 .card::before {
@@ -39,24 +38,16 @@ body {
   transform: skewY(390deg);
 }
 
-.card .imgBox {
-  position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 10px;
-  z-index: 1;
-}
 
 .card .contentBox {
   position: relative;
-  padding: 5px;
+  top: 32vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   z-index: 2;
+  color: rgb(255, 1, 1);
 }
 
 .card .contentBox h3 {
@@ -98,3 +89,14 @@ body {
   height: 300px;
   width: auto;
 }
+
+.button-trash{
+  border: unset;
+  background-color: unset;
+  top: 10px;
+  left: 10em;
+  position: relative;
+  font-size: 22px;
+  color: #ffff;
+}
+

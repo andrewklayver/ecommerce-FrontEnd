@@ -1,28 +1,30 @@
-import { useEffect, useState } from 'react';
-import { useFormik, Formik, Form, Field, ErrorMessage } from 'formik';
+import { useFormik } from 'formik';
 import "./Login.css"
 import { basicSchema } from '../../schemas';
-
 import axios from "axios"; 
+import {  useNavigate  } from 'react-router-dom';
 
 
-const onSubmit = async (values, actions) => {
-  console.log(values);
-  await new Promise((resolve) => setTimeout(resolve, 1000));
-  actions.resetForm()
-  await axios.get('http://localhost:3006/usuario')
-  .then(res => {
-    if(values.email === res.email && values.senha === res.senha){
-      window.alert("Você está logado")
-    }else{
-      window.alert(`Usuário não existe`)
-    }
-  })
-  .catch(error => console.log(error))
-  
-};
+
 
 function Login() {
+  const navigate = useNavigate ();
+  const onSubmit = async (values, actions) => {
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+    actions.resetForm()
+    await axios.post('http://localhost:3006/login', values)
+    .then(res => {
+      
+      if(values.email === res.data.usuario.email){
+      navigate('/')
+     
+    }else{
+        window.alert(`Usuário não existe`)
+      }
+    })
+    .catch(error => console.log(error))
+    
+  };
   const { values, errors, touched, isSubmitting, handleBlur, handleChange, handleSubmit } = useFormik({
     initialValues: {
       email: 'andrew1@gmail.com',
@@ -31,6 +33,8 @@ function Login() {
     validationSchema: basicSchema,
     onSubmit,
   });
+
+  
 
   
   return (

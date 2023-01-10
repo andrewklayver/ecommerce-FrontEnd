@@ -1,18 +1,20 @@
 
+import axios from "axios";
 import "./Header.css";
 
 const Header = () => {
+
    
    return ( 
         <header>
               <img href="/home" className="logo" src="../../image/americanas.svg" alt="logo"></img> 
            <nav>
               <ul>
-                <li>Adicionar Produtos</li>
+              <a href="/criarproduto">Adicionar Produto</a>
               </ul>
-           <div className="visitante">
+           <nav className="login">
             <a href="/login"> Faça seu Login!</a>
-           </div>
+           </nav>
            </nav> 
        
         </header>
