@@ -11,9 +11,11 @@ const Header = () => {
            <nav>
               <ul>
               <a href="/criarproduto">Adicionar Produto</a>
+              <a href="/cadastro"> Faça seu cadastro</a>
               </ul>
            <nav className="login">
             <a href="/login"> Faça seu Login!</a>
+            
            </nav>
            </nav> 
        

@@ -1,4 +1,4 @@
-import Cards from "../CardProdutos/Cards";
+import Cards from "../Card/Cards";
 import "./Body.css"
 
 const Body = () => {
